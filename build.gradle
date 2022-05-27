@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+    id 'war'
+}
+
+group 'ru.ifmo.scs'
+version '1.0-SNAPSHOT'
+sourceCompatibility = '11'
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'org.springframework', name: 'spring-webmvc', version: '5.3.19'
+    compileOnly group: 'javax.servlet', name: 'javax.servlet-api', version: '3.1.0'
+    implementation group: 'jstl', name: 'jstl', version: '1.2'
+    implementation group: 'org.postgresql', name: 'postgresql', version: '42.3.4'
+    implementation group: 'org.springframework', name: 'spring-jdbc', version: '5.3.19'
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.24'
+    implementation group: 'org.hibernate.validator', name: 'hibernate-validator', version: '7.0.4.Final'
+    implementation group: 'javax.persistence', name: 'javax.persistence-api', version: '2.2'
+
+}
